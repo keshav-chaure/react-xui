@@ -1,0 +1,28 @@
+{
+  "name": "react-xui",
+  "version": "1.0.0",
+  "description": "react-xui for employee db mysql sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshav-chaure/react-xui.git"
+  },
+  "author": "keshav chaure <keshav.chaure@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keshav-chaure/react-xui/issues"
+  },
+  "homepage": "https://github.com/keshav-chaure/react-xui#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "webpack": "^3.8.1"
+  }
+}
