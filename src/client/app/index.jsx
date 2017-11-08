@@ -3,6 +3,8 @@ import {render} from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
 import {FormattedMessage} from 'react-intl';
 import {IntlProvider} from 'react-intl';
+
+
 class App extends React.Component {
 
 constructor(props) {
@@ -31,6 +33,6 @@ constructor(props) {
         }
 }
 
-render( <IntlProvider locale="en">
+render( <IntlProvider locale="fr">
         <App />
     </IntlProvider>, document.getElementById('app'));
