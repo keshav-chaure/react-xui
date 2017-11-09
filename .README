@@ -1,15 +1,7 @@
 react project
 
-<<<<<<< HEAD
 go to project structure
 
 # npm install
 # npm run build
 # npm run serve
-=======
-# go to project folder
-
- npm install
- npm run build
- npm run serve
->>>>>>> master
