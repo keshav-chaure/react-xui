@@ -1,38 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {render} from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
-import {FormattedMessage} from 'react-intl';
-import {IntlProvider} from 'react-intl';
+import IntlProvider from './intl-provider';
+import { Provider } from 'react-redux';
+import CounterApp from './reducers/counter.reducer';
+import Counter from './containers/counter';
+import {getStore} from './store-factory';
 
 
-class App extends React.Component {
+const store = getStore();
 
-constructor(props) {
-        super(props);
-        this.state = {
-            name       : 'Eric',
-            unreadCount: 1000,
-        };
-    }
+class App extends Component{
 
-  render () {
-        const {name, unreadCount} = this.state;
 
+    render() {
         return (
-            <p>
-                <FormattedMessage
-                    id="welcome"
-                    defaultMessage={`Hello {name}, you have {unreadCount, number} {unreadCount, plural,
-                      one {message}
-                      other {messages}
-                    }`}
-                    values={{name: <b>{name}</b>, unreadCount}}
-                />
-            </p>
+<p>
+                <Counter />
+</p>           
         );
-        }
-}
+    }
+};
 
-render( <IntlProvider locale="fr">
-        <App />
-    </IntlProvider>, document.getElementById('app'));
+render(<Provider store={store}> <IntlProvider>  <Counter /></IntlProvider></Provider>, document.getElementById('app'));

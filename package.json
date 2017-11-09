@@ -4,8 +4,9 @@
   "description": "react-xui for employee db mysql sample",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server  --content-base --inline --hot ",
+    "start": "webpack-dev-server  --content-base --inline --hot && webpack -d",
     "serve": "node server/server.js",
+    "build": "webpack -d",
     "test": "test"
   },
   "repository": {
@@ -28,6 +29,8 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-intl": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
