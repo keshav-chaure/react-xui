@@ -11,11 +11,14 @@ class Counter extends Component{
         const { increment, decrement, count } = this.props;
         return (
             <div>
-                Current counter value: {count}
-                <div><button onClick={(e) => increment()}>Increment</button></div>
-                <div><button onClick={(e) => decrement()}>Decrement</button></div>
+            <p>
+              <FormattedMessage id='WELCOME'/>
+               </p>
+              <FormattedMessage id='CNTRESULT'/>: {count}
+                <div><button onClick={(e) => increment()}><FormattedMessage id='INCREMENT'/></button></div>
+                <div><button onClick={(e) => decrement()}><FormattedMessage id='DECREMENT'/></button></div>
                 <div>
-                <FormattedMessage id='WELCOME'/> <FormattedMessage id='BYE'/>
+                <FormattedMessage id='BYE'/>
                 </div>
             </div>
         );
