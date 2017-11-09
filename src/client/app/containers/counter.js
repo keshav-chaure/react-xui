@@ -15,7 +15,7 @@ class Counter extends Component{
                 <div><button onClick={(e) => increment()}>Increment</button></div>
                 <div><button onClick={(e) => decrement()}>Decrement</button></div>
                 <div>
-                <FormattedMessage id='WELCOME'/>
+                <FormattedMessage id='WELCOME'/> <FormattedMessage id='BYE'/>
                 </div>
             </div>
         );

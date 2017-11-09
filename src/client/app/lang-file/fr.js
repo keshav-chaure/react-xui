@@ -1,3 +1,4 @@
 export default Object.freeze({
-    WELCOME: `Bienvenue`
+    WELCOME: `Bienvenue`,
+      BYE: `bye in french!`
 });

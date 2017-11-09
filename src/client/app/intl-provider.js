@@ -1,5 +1,3 @@
-// Copyright (c) 2016 Deere & Company
-
 import {IntlProvider, addLocaleData} from 'react-intl';
 import {connect} from 'react-redux';
 import de from 'react-intl/locale-data/de';

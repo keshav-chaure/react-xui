@@ -1,4 +1,4 @@
-// Copyright (c) 2016 Deere & Company
+
 import CounterApp from './reducers/counter.reducer';
 import {combineReducers} from 'redux';
 
