@@ -26,7 +26,7 @@ addLocaleData([
 ]);
 
 const getStateToBindToContainerProps = state => ({
-    locale: 'EN',
+    locale: 'FR',
     messages:  getMessages().FR
 });
 
