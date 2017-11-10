@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/Counter.actions';
 import {FormattedMessage} from 'react-intl';
+import style from './counter.scss';
 
 class Counter extends Component{
 
@@ -10,8 +11,8 @@ class Counter extends Component{
     render() {
         const { increment, decrement, count } = this.props;
         return (
-            <div>
-                <p>
+            <div >
+                <p className="example">
               <FormattedMessage id='WELCOME'/>
                </p>
               <FormattedMessage id='CNTRESULT'/>: {count}

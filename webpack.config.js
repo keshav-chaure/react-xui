@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
+
 var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
 var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
@@ -12,11 +13,16 @@ var config = {
 		publicPath: 'http://localhost:8080/'
   },
   module : {
+
     loaders : [
       {
         test : /\.jsx?/,
         include : APP_DIR,
         loader : 'babel-loader'
+      },
+      {
+              test: /\.scss$/,
+              loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
