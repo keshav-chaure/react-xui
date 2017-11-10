@@ -11,7 +11,7 @@ class Counter extends Component{
         const { increment, decrement, count } = this.props;
         return (
             <div>
-            <p>
+                <p>
               <FormattedMessage id='WELCOME'/>
                </p>
               <FormattedMessage id='CNTRESULT'/>: {count}
