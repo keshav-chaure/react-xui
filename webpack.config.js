@@ -12,8 +12,7 @@ var config = {
     filename: 'bundle.js',
 		publicPath: 'http://localhost:8080/'
   },
-  module : {
-
+  module : {    
     loaders : [
       {
         test : /\.jsx?/,
