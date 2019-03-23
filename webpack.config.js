@@ -12,18 +12,29 @@ var config = {
     filename: 'bundle.js',
 		publicPath: 'http://localhost:8080/'
   },
-  module : {
-
-    loaders : [
+  module : {    
+    rules : [
       {
         test : /\.jsx?/,
         include : APP_DIR,
-        loader : 'babel-loader'
+        use:
+        {
+          loader : 'babel-loader'
+        }
       },
       {
-              test: /\.scss$/,
-              loaders: ['style-loader', 'css-loader', 'sass-loader']
-      }
+        test: /\.scss$/,
+        use: [{
+            loader: "style-loader"
+        }, {
+            loader: "css-loader"
+        }, {
+            loader: "sass-loader",
+            options: {
+                includePaths: [APP_DIR+"/containers", "absolute/path/b"]
+            }
+        }]
+    }
     ]
   }
 };
